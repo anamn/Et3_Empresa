@@ -1,7 +1,7 @@
 package br.com.contmatic.testes;
 
 import static br.com.contmatic.beanValidation.ValidationFinancas.validador;
-import static br.com.contmatic.easy.random.classes.FinancasEasyRandomParametros.parametrosLucro;
+import static br.com.contmatic.easy.random.classes.FinancasEasyRandom.parametrosLucro;
 import static br.com.contmatic.financeiro.Moeda.DOLLAR;
 import static java.time.Month.AUGUST;
 import static java.time.Month.DECEMBER;

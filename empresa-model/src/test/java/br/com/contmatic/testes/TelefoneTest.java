@@ -1,7 +1,7 @@
 package br.com.contmatic.testes;
 
 import static br.com.contmatic.beanValidation.ValidationTelefone.validador;
-import static br.com.contmatic.easy.random.classes.TelefoneEasyRandomParametros.parametrosTelefone;
+import static br.com.contmatic.easy.random.classes.TelefoneEasyRandom.parametrosTelefone;
 import static br.com.contmatic.telefone.Ddd.PR44;
 import static br.com.contmatic.telefone.TelefoneType.CELULAR;
 import static nl.jqno.equalsverifier.Warning.NONFINAL_FIELDS;

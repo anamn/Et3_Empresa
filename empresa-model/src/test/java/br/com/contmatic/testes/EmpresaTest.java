@@ -1,8 +1,8 @@
 package br.com.contmatic.testes;
 
 import static br.com.contmatic.beanValidation.ValidationEmpresa.validador;
-import static br.com.contmatic.easy.random.classes.EmpresaEasyRandomParametros.empresaValida;
-import static br.com.contmatic.easy.random.classes.EnderecoEasyRandomParametros.parametrosEndereco;
+import static br.com.contmatic.easy.random.classes.EmpresaEasyRandom.empresaValida;
+import static br.com.contmatic.easy.random.classes.EnderecoEasyRandom.parametrosEndereco;
 import static br.com.contmatic.endereco.EnderecoType.CASA;
 import static br.com.contmatic.telefone.Ddd.AM92;
 import static br.com.contmatic.telefone.Ddd.SP11;

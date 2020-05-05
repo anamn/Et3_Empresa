@@ -6,6 +6,7 @@ import static org.jeasy.random.FieldPredicates.ofType;
 
 import java.math.BigDecimal;
 
+import org.jeasy.random.EasyRandom;
 import org.jeasy.random.EasyRandomParameters;
 
 import br.com.contmatic.easy.random.atributos.CodigoEasyRandom;
@@ -15,7 +16,7 @@ import br.com.contmatic.easy.random.atributos.TipoProdutoEasyRandom;
 import br.com.contmatic.easy.random.atributos.ValoresEasyRandom;
 import br.com.contmatic.empresa.Produto;
 
-public class ProdutoEasyRandomParametros {
+public class ProdutoEasyRandom {
 
     public static EasyRandomParameters parametrosProduto() {
         return new EasyRandomParameters().randomize(named("tipo").and(ofType(String.class)).and(inClass(Produto.class)), new TipoProdutoEasyRandom())
@@ -23,5 +24,9 @@ public class ProdutoEasyRandomParametros {
                 .randomize(named("preco").and(ofType(BigDecimal.class)).and(inClass(Produto.class)), new ValoresEasyRandom())
                 .randomize(named("quantidade").and(ofType(Integer.class)).and(inClass(Produto.class)), new QuantidadeEasyRandom())
                 .randomize(named("codigo").and(ofType(String.class)).and(inClass(Produto.class)), new CodigoEasyRandom());
+    }
+    
+    public static Produto produtoValido() {
+        return new EasyRandom(parametrosProduto()).nextObject(Produto.class);
     }
 }

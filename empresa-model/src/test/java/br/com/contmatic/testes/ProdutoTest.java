@@ -1,7 +1,7 @@
 package br.com.contmatic.testes;
 
 import static br.com.contmatic.beanValidation.ValidationProduto.validador;
-import static br.com.contmatic.easy.random.classes.ProdutoEasyRandomParametros.parametrosProduto;
+import static br.com.contmatic.easy.random.classes.ProdutoEasyRandom.parametrosProduto;
 import static nl.jqno.equalsverifier.Warning.NONFINAL_FIELDS;
 import static org.apache.commons.lang.RandomStringUtils.randomAlphabetic;
 import static org.apache.commons.lang.RandomStringUtils.randomNumeric;

@@ -1,7 +1,7 @@
 package br.com.contmatic.testes;
 
 import static br.com.contmatic.beanValidation.ValidationEndereco.validador;
-import static br.com.contmatic.easy.random.classes.EnderecoEasyRandomParametros.parametrosEndereco;
+import static br.com.contmatic.easy.random.classes.EnderecoEasyRandom.parametrosEndereco;
 import static br.com.contmatic.endereco.EnderecoType.APARTAMENTO;
 import static nl.jqno.equalsverifier.Warning.NONFINAL_FIELDS;
 import static org.apache.commons.lang.RandomStringUtils.randomAlphabetic;

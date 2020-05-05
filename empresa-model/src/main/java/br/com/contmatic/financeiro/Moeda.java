@@ -1,10 +1,10 @@
 package br.com.contmatic.financeiro;
 
 public enum Moeda {
-    
-    REAL("Real"),
-    EURO("Euro"),
-    DOLLAR("Dollar");
+
+                   REAL("Real"),
+                   EURO("Euro"),
+                   DOLLAR("Dollar");
 
     private String tipo;
 
@@ -12,13 +12,12 @@ public enum Moeda {
         this.tipo = tipo;
     }
 
-    @Override
-    public String toString() {
-
-        return this.getTipo();
+    public String getTipo() {
+        return tipo;
     }
 
-    public String getTipo() {
+    @Override
+    public String toString() {
         return name();
     }
 }

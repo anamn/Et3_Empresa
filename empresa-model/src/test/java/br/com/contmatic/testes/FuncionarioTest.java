@@ -1,7 +1,7 @@
 package br.com.contmatic.testes;
 
 import static br.com.contmatic.beanValidation.ValidationFuncionario.validador;
-import static br.com.contmatic.easy.random.classes.FuncionarioRandomico.funcionarioValido;
+import static br.com.contmatic.easy.random.classes.FuncionarioEasyRandom.funcionarioValido;
 import static org.apache.commons.lang.RandomStringUtils.randomAlphabetic;
 import static org.apache.commons.lang.RandomStringUtils.randomNumeric;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -18,6 +18,9 @@ public class EmpresaAssembly implements Assembly<Empresa, Document> {
             empresa.setClientes(toClientes(document.getList("clientes", Document.class)));
             empresa.setFuncionarios(ListasAssembly.toFuncionarios(document.getList("funcionarios", Document.class)));
             empresa.setProdutos(ListasAssembly.toProdutos(document.getList("produtos", Document.class)));
+            FinancasAssembly financas= new FinancasAssembly();
+            Document documentFinancas = (Document) document.get("financas");
+            empresa.setFinancas(financas.toResource(documentFinancas));
             return empresa;
         }
         return null;
@@ -31,3 +34,4 @@ public class EmpresaAssembly implements Assembly<Empresa, Document> {
         return null;
     }
 }
+

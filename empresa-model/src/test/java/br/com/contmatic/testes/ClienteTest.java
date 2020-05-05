@@ -1,7 +1,7 @@
 package br.com.contmatic.testes;
 
 import static br.com.contmatic.beanValidation.ValidationCliente.validador;
-import static br.com.contmatic.easy.random.classes.ClienteRandomico.clienteValido;
+import static br.com.contmatic.easy.random.classes.ClienteEasyRandom.clienteValido;
 import static br.com.contmatic.telefone.Ddd.AM92;
 import static br.com.contmatic.telefone.Ddd.SP11;
 import static br.com.contmatic.telefone.TelefoneType.CELULAR;
