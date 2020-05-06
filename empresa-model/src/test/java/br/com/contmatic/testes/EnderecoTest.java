@@ -43,7 +43,6 @@ public class EnderecoTest {
     @Test
     public void nao_deve_retornar_erros_de_validacao() {
         Set<String> teste = new TreeSet<String>();
-        System.out.println(endereco);
         assertThat(teste, is(validador(endereco, GrupoIdentificacao.class)));
     }
 
@@ -162,7 +161,7 @@ public class EnderecoTest {
     // Teste hashCode, Equals e toString
     @Test
     public void deve_testar_equals_e_hashCode() {
-    EqualsVerifier.forClass(Endereco.class).withIgnoredFields("enderecoType").suppress(NONFINAL_FIELDS).verify();
+    EqualsVerifier.forClass(Endereco.class).withIgnoredFields("tipo").suppress(NONFINAL_FIELDS).verify();
     }
 
     @Test
@@ -187,6 +186,6 @@ public class EnderecoTest {
 
     @Test
     public void deve_verificar_se_toString_contem_enderecoType() {
-        assertTrue(endereco.toString().contains("enderecoType"));
+        assertTrue(endereco.toString().contains("tipo"));
     }
 }

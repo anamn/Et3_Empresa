@@ -236,6 +236,6 @@ public class FuncionarioTest {
 
     @Test
     public void deve_verificar_se_toString_contem_enderecoType() {
-        assertTrue(funcionario.toString().contains("enderecoType"));
+        assertTrue(funcionario.toString().contains("tipo"));
     }
 }
