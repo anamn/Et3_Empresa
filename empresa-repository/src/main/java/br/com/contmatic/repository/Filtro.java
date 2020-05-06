@@ -8,21 +8,22 @@ public class Filtro {
 
     private String componente;
     private String valor;
+    private List<String> valores;
 
-    public String getComponente() {
-        return componente;
-    }
-
-    public void setComponente(String componente) {
+    public Filtro(String componente, String valor) {
+        super();
         this.componente = componente;
-    }
-
-    public String getValor() {
-        return valor;
-    }
-
-    public void setValor(String valor) {
         this.valor = valor;
+    }
+
+    public Filtro(String componente, List<String> valores) {
+        super();
+        this.componente = componente;
+        this.setValores(valores);
+    }
+
+    public Filtro() {
+        super();
     }
 
     public void verificaItens(Empresa empresa, List<String> pesquisa) {
@@ -61,6 +62,29 @@ public class Filtro {
     @Override
     public String toString() {
         return componente + valor;
+    }
+
+    public List<String> getValores() {
+        return valores;
+    }
+
+    public void setValores(List<String> valores) {
+        this.valores = valores;
+    }
+    public String getComponente() {
+        return componente;
+    }
+
+    public void setComponente(String componente) {
+        this.componente = componente;
+    }
+
+    public String getValor() {
+        return valor;
+    }
+
+    public void setValor(String valor) {
+        this.valor = valor;
     }
 
 }

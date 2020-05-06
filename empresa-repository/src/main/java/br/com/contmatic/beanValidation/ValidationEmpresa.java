@@ -9,14 +9,15 @@ import javax.validation.Validator;
 
 import com.google.common.base.Preconditions;
 
-import br.com.contmatic.empresa.Cliente;
+import br.com.contmatic.empresa.Empresa;
 
-public abstract class ValidationCliente {
+public abstract class ValidationEmpresa {
 
-    public static Set<String> validador(Cliente cliente, Class<?> grupo) {
+
+    public static Set<String> validador(Empresa empresa) {
         Validator validador = Validation.buildDefaultValidatorFactory().getValidator();
-        Set<ConstraintViolation<Cliente>> erros = validador.validate(cliente, grupo);
-        Set<String> erros2 = new TreeSet<String>();
+        Set<ConstraintViolation<Empresa>> erros = validador.validate(empresa);
+        Set<String> erros2 = new TreeSet<>();
         erros.stream().forEach(erro -> erros2.add(erro.getMessage()));
         Preconditions.checkArgument(erros.isEmpty(), new IllegalAccessError(erros2.toString()));
         return erros2;
